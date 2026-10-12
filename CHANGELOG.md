@@ -4,6 +4,10 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Added
+
+- New `pulse` animated banner style with expanding concentric rings, including dark and light SVG variants.
+
 ## [1.1.0] - 2026-10-13
 
 ### Added
