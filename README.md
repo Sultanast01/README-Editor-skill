@@ -1,6 +1,6 @@
 <a id="top"></a>
 <a href="#readme-forge">
-  <picture><source media="(prefers-color-scheme: dark)" srcset=".github/assets/header-dark.svg"><img alt="readme-forge logo, a ghost inside a circuit chip, above the title readme-forge and the line: Your code is the source of truth. Your README should be too." src=".github/assets/header-light.svg" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset=".github/assets/header-dark.svg"><img alt="readme-forge logo, a ghost inside a circuit chip, above the title readme-forge and the line: Your code is the source of truth. Your README should be too." src=".github/assets/header-light.svg" width="100%"></picture>
 </a>
 
 <p align="center"><b>A Claude skill that writes, designs, scores and fixes READMEs using facts from your actual code.</b></p>
@@ -68,13 +68,13 @@ cp README.after.md README.md && python ../../readme-forge/scripts/score_readme.p
 
 Most README generators fill one template. Most profile galleries ask you to copy someone else's file. Neither reads your code, and neither designs anything. readme-forge does both:
 
-| | Other tools | readme-forge |
-|---|---|---|
-| **Facts** | Typed in by hand, or read from `package.json` only | Detects 15+ ecosystems, scripts, env vars, Docker, CI, routes; never invents commands |
-| **Visuals** | A logo if you have one | Mermaid architecture **from real imports**, plus 15 animated banner styles and CTA buttons with dark/light variants |
-| **Widgets** | Hard-coded public URLs (some now return HTTP 402) | Tested endpoints, self-hosted SVGs that can't rate-limit, reliability tiers |
-| **Quality** | None | A 0–100 score and linter: structure, accessibility, dead links, drift, design |
-| **Platforms** | GitHub only | GitHub, Hugging Face cards, PyPI, npm, GitLab |
+|               | Other tools                                        | readme-forge                                                                                                        |
+| ------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Facts**     | Typed in by hand, or read from `package.json` only | Detects 15+ ecosystems, scripts, env vars, Docker, CI, routes; never invents commands                               |
+| **Visuals**   | A logo if you have one                             | Mermaid architecture **from real imports**, plus 15 animated banner styles and CTA buttons with dark/light variants |
+| **Widgets**   | Hard-coded public URLs (some now return HTTP 402)  | Tested endpoints, self-hosted SVGs that can't rate-limit, reliability tiers                                         |
+| **Quality**   | None                                               | A 0–100 score and linter: structure, accessibility, dead links, drift, design                                       |
+| **Platforms** | GitHub only                                        | GitHub, Hugging Face cards, PyPI, npm, GitLab                                                                       |
 
 ## Quickstart
 
@@ -259,6 +259,18 @@ Inspired by ShaderGradient, Supahero, Call to Inspiration, dark-design galleries
 
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="readme-forge/assets/banners/pulse-dark.svg">
+<img alt="pulse banner style: soft glowing rings expanding behind the title" src="readme-forge/assets/banners/pulse-light.svg" width="100%">
+</picture>
+<b><code>--style pulse</code></b><br>
+<sub>soft glowing rings expanding behind the title</sub>
+</td>
+<td width="33%" valign="top"></td>
+<td width="33%" valign="top"></td>
+</tr>
 </table>
 
 ```bash
@@ -301,26 +313,26 @@ Palettes: `ember` · `ocean` · `violet` · `mint` · `sunset` · `mono` · `cyb
 
 ## What you can ask
 
-| You say | You get |
-|---|---|
-| "Write a README for this repo" | Project README from code facts, a designed header and footer, and an architecture diagram |
+| You say                                         | You get                                                                                                   |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| "Write a README for this repo"                  | Project README from code facts, a designed header and footer, and an architecture diagram                 |
 | "Make my GitHub profile README, creative style" | A profile from 11 archetypes with a hero banner, working widgets and an optional 3D contribution calendar |
-| "Review my README and fix it" | A score, drift report and ranked fixes, then a rewrite in your voice |
-| "Give my README a better header" | 2–3 banner options in your brand colour, ready to paste |
-| "Create a model card for this fine-tune" | A Hugging Face card with validated YAML |
-| "Make this repo open-source ready" | README + CONTRIBUTING, SECURITY, Code of Conduct, issue/PR templates |
-| "Make a PyPI version of my README" | A copy with absolute image links and no GitHub-only syntax, so it renders on PyPI and npm |
+| "Review my README and fix it"                   | A score, drift report and ranked fixes, then a rewrite in your voice                                      |
+| "Give my README a better header"                | 2–3 banner options in your brand colour, ready to paste                                                   |
+| "Create a model card for this fine-tune"        | A Hugging Face card with validated YAML                                                                   |
+| "Make this repo open-source ready"              | README + CONTRIBUTING, SECURITY, Code of Conduct, issue/PR templates                                      |
+| "Make a PyPI version of my README"              | A copy with absolute image links and no GitHub-only syntax, so it renders on PyPI and npm                 |
 
 ## Templates included
 
-| Kind | Templates |
-|---|---|
+| Kind                     | Templates                                                                                                                                                                |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Profile READMEs** (11) | `minimal` · `creative` · `stats-dashboard` · `code-mode` · `badges-wall` · `retro` · `student` · `data-scientist` · `oss-maintainer` · `actions-dynamic` · `org-profile` |
-| **Project READMEs** (7) | `api` · `cli` · `library` · `webapp` · `ml-project` · `monorepo` · `minimal` |
-| **Hugging Face** (3) | model card · dataset card · Space README, each with validated YAML frontmatter |
-| **Design blocks** (6) | centered header · profile header · landing-page hero · CTA section · SVG footer · quiet footer |
-| **Companion docs** | CONTRIBUTING · CODE_OF_CONDUCT · SECURITY · SUPPORT · CHANGELOG · CITATION.cff · FUNDING · issue forms · PR template |
-| **Profile Actions** (5) | contribution snake · latest blog posts · WakaTime stats · metrics · 3D contribution calendar |
+| **Project READMEs** (7)  | `api` · `cli` · `library` · `webapp` · `ml-project` · `monorepo` · `minimal`                                                                                             |
+| **Hugging Face** (3)     | model card · dataset card · Space README, each with validated YAML frontmatter                                                                                           |
+| **Design blocks** (6)    | centered header · profile header · landing-page hero · CTA section · SVG footer · quiet footer                                                                           |
+| **Companion docs**       | CONTRIBUTING · CODE_OF_CONDUCT · SECURITY · SUPPORT · CHANGELOG · CITATION.cff · FUNDING · issue forms · PR template                                                     |
+| **Profile Actions** (5)  | contribution snake · latest blog posts · WakaTime stats · metrics · 3D contribution calendar                                                                             |
 
 Every widget URL in the profile templates was checked with `check_links.py`. Services that now fail, such as the public trophy and activity-graph hosts that return HTTP 402, are left out or replaced by self-hosted Actions.
 
@@ -345,27 +357,27 @@ Every script runs on its own with Python 3.8+ and no dependencies. See the [skil
 
 ## Scripts
 
-| Script | What it does | Example |
-|---|---|---|
-| `analyze_repo.py` | Prints the repo's facts as JSON: languages, package manager, scripts, env vars, Docker, CI, license, Hugging Face files | `python readme-forge/scripts/analyze_repo.py . --compact` |
-| `import_graph.py` | Draws a Mermaid architecture draft from real imports (Python, JS/TS, Go, Rust) | `python readme-forge/scripts/import_graph.py . --mermaid` |
-| `score_readme.py` | Scores a README 0–100, lints it and checks it against the code | `python readme-forge/scripts/score_readme.py README.md --repo . --min 85` |
-| `check_links.py` | Finds dead links, broken badges and widgets that return error cards | `python readme-forge/scripts/check_links.py README.md` |
-| `make_banner.py` | Generates animated SVG headers, footers, dividers and buttons | `python readme-forge/scripts/make_banner.py --list` |
+| Script            | What it does                                                                                                            | Example                                                                   |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `analyze_repo.py` | Prints the repo's facts as JSON: languages, package manager, scripts, env vars, Docker, CI, license, Hugging Face files | `python readme-forge/scripts/analyze_repo.py . --compact`                 |
+| `import_graph.py` | Draws a Mermaid architecture draft from real imports (Python, JS/TS, Go, Rust)                                          | `python readme-forge/scripts/import_graph.py . --mermaid`                 |
+| `score_readme.py` | Scores a README 0–100, lints it and checks it against the code                                                          | `python readme-forge/scripts/score_readme.py README.md --repo . --min 85` |
+| `check_links.py`  | Finds dead links, broken badges and widgets that return error cards                                                     | `python readme-forge/scripts/check_links.py README.md`                    |
+| `make_banner.py`  | Generates animated SVG headers, footers, dividers and buttons                                                           | `python readme-forge/scripts/make_banner.py --list`                       |
 
 Use `score_readme.py --min 85` in CI to stop a README from getting worse. This repo's own [CI](.github/workflows/ci.yml) does exactly that.
 
 ## Troubleshooting
 
-| Problem | Fix |
-|---|---|
-| `/plugin isn't available in this environment` | Run `claude plugin install readme-forge --marketplace tanmayai23/README-Editor-skill` in a normal terminal, then open a new chat |
-| `Unknown command: /readme-forge` after installing | Start a new Claude Code session. Plugins load at startup |
-| Two `readme-forge` skills, or the wrong one runs | You have both the plugin and a manual copy. Use `/readme-forge:readme-forge`, or delete `~/.claude/skills/readme-forge` |
-| `python: command not found` | Install Python 3.8+. On macOS and Linux, tell Claude to use `python3`. The skill accepts either |
-| Old behaviour after an update | `claude plugin marketplace update readme-forge`, then `claude plugin update readme-forge@readme-forge`, then restart |
-| Garbled `█` bars in Windows PowerShell | Run `[Console]::OutputEncoding = [Text.Encoding]::UTF8` once, or use Windows Terminal |
-| Widget images broken on your profile | Run `python readme-forge/scripts/check_links.py README.md`, then [report the widget](https://github.com/tanmayai23/README-Editor-skill/issues/new?template=broken_widget.yml) |
+| Problem                                           | Fix                                                                                                                                                                           |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/plugin isn't available in this environment`     | Run `claude plugin install readme-forge --marketplace tanmayai23/README-Editor-skill` in a normal terminal, then open a new chat                                              |
+| `Unknown command: /readme-forge` after installing | Start a new Claude Code session. Plugins load at startup                                                                                                                      |
+| Two `readme-forge` skills, or the wrong one runs  | You have both the plugin and a manual copy. Use `/readme-forge:readme-forge`, or delete `~/.claude/skills/readme-forge`                                                       |
+| `python: command not found`                       | Install Python 3.8+. On macOS and Linux, tell Claude to use `python3`. The skill accepts either                                                                               |
+| Old behaviour after an update                     | `claude plugin marketplace update readme-forge`, then `claude plugin update readme-forge@readme-forge`, then restart                                                          |
+| Garbled `█` bars in Windows PowerShell            | Run `[Console]::OutputEncoding = [Text.Encoding]::UTF8` once, or use Windows Terminal                                                                                         |
+| Widget images broken on your profile              | Run `python readme-forge/scripts/check_links.py README.md`, then [report the widget](https://github.com/tanmayai23/README-Editor-skill/issues/new?template=broken_widget.yml) |
 
 Something else? [Open an issue](https://github.com/tanmayai23/README-Editor-skill/issues/new?template=bug_report.yml) with your OS, Claude Code version (`claude --version`) and the error.
 
@@ -375,24 +387,28 @@ Something else? [Open an issue](https://github.com/tanmayai23/README-Editor-skil
 <summary><b>Does it send my code anywhere?</b></summary>
 
 The scripts only read files on your machine. Only `check_links.py` uses the network, and only for the URLs already in your README. What Claude sees is governed by your normal Claude Code settings.
+
 </details>
 
 <details>
 <summary><b>What if it can't find something, like the install command?</b></summary>
 
 It leaves a `TODO` in the README and lists every TODO back to you. It never makes up commands, versions or benchmark numbers.
+
 </details>
 
 <details>
 <summary><b>Will the animated banners work on PyPI, npm or Hugging Face?</b></summary>
 
 GitHub renders them, including dark and light variants. Other platforms ignore `<picture>`, so ask for "a PyPI version" and the skill switches to absolute URLs and single images.
+
 </details>
 
 <details>
 <summary><b>Which languages get architecture diagrams?</b></summary>
 
 Python, JavaScript/TypeScript, Go and Rust. For other languages the skill still writes the README and sketches the diagram from the folder layout, marked as a draft.
+
 </details>
 
 ## Roadmap
